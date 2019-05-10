@@ -18,6 +18,13 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<distributionManagement>
+   <repository>
+      <id>nexus-releases</id>
+      <url>http://localhost:8081/repository/NexusRepo/</url>
+   </repository>
+</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -29,6 +36,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 	<build>
